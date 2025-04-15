@@ -277,14 +277,15 @@ document.querySelector("form").addEventListener("submit", (e) => {
             // console.log(abc);
             result();
         
-        function result() {
+      
+    }
+function result() {
            
             from_text.innerText = `${document.querySelector("#amount_value").value} ${currencies[from_v]} equals`;
             to_text.innerText = `${abc.toFixed(2)} ${currencies[to_v]}`;
             latest_update.innerText = `Update at ${data2.meta.last_updated_at}`
 
         }
-    }
 
 fetching_curr(`https://api.currencyapi.com/v3/latest?apikey=cur_live_Ak2zRJYkja8U0VkiLJ3QOz0auWyF1AQzUzg1WJa8&base_currency=${from_v}&currencies[]=${to_v}`);
     }

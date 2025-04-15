@@ -193,6 +193,7 @@ let abc = "";
 let from_text = document.querySelector("#from_text")
 let to_text = document.querySelector("#to_text")
 let latest_update = document.querySelector("#latest_update")
+latest_update.innerText =` Update at: ${new Date().toLocaleString()}`
 
 
 

@@ -186,7 +186,7 @@ const currencies = {
 var to = document.querySelector("#to");
 var from = document.querySelector("#from");
 var amount_value = document.querySelector("#amount_value").value;
-fetching("https://api.currencyapi.com/v3/currencies?apikey=cur_live_Ak2zRJYkja8U0VkiLJ3QOz0auWyF1AQzUzg1WJa8")
+fetching("https://api.currencyapi.com/v3/currencies?apikey=cur_live_aVh8WC4dlcfokZiodRNphMo2AOXnzQot2t3gAue0")
 let from_value = "";
 let to_value = "";
 let abc = "";
@@ -287,7 +287,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
     }
 
 
-fetching_curr(`https://api.currencyapi.com/v3/latest?apikey=cur_live_Ak2zRJYkja8U0VkiLJ3QOz0auWyF1AQzUzg1WJa8&base_currency=${from_v}&currencies[]=${to_v}`);
+fetching_curr(`https://api.currencyapi.com/v3/latest?apikey=cur_live_aVh8WC4dlcfokZiodRNphMo2AOXnzQot2t3gAue0&base_currency=${from_v}&currencies[]=${to_v}`);
     }
     else{
         alert("please enter the values")

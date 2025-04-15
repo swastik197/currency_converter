@@ -268,11 +268,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
         var data2 = await response.json();
         let xyz = data2.data[to_v].value;
 
-        if( amount_value ==""|| amount_value ==0 || amount_value == null){
-            amount_value = 1
-            // console.log(amount_value)
-        }
-        // let amount_value = document.querySelector("#amount_value").value;
+        
+        let amount_value = document.querySelector("#amount_value").value;
         // console.log(xyz)
         // console.log(amount_value)
          

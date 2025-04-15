@@ -193,7 +193,7 @@ let abc = "";
 let from_text = document.querySelector("#from_text")
 let to_text = document.querySelector("#to_text")
 let latest_update = document.querySelector("#latest_update")
-latest_update.innerText =` Update at: ${new Date().toLocaleString()}`
+latest_update.innerText =` Update at ${new Date().toLocaleString()}`
 
 
 
@@ -261,8 +261,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
     if(from_value || to_value || amount_value){
     var from_v= getKeyByValue(currencies, from_value)
     var to_v= getKeyByValue(currencies, to_value)
-        console.log(from_v)
-        console.log(to_v)
+        // console.log(from_v)
+        // console.log(to_v)
     async function fetching_curr(link) {
         var response = await fetch(link);
         var data2 = await response.json();
@@ -270,11 +270,11 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
         
         let amount_value = document.querySelector("#amount_value").value;
-        console.log(xyz)
-        console.log(amount_value)
+        // console.log(xyz)
+        // console.log(amount_value)
          
             let abc = amount_value * xyz;
-            console.log(abc);
+            // console.log(abc);
             result();
         
         function result() {
